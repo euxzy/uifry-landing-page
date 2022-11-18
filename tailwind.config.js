@@ -14,18 +14,29 @@ module.exports = {
       },
       colors: {
         mint: '#00FFA3',
-        dark: '#101010',
-        gray: '#828282'
+        dark: {
+          1: '#101010',
+          2: '#050505'
+        },
+        gray: {
+          1: '#828282',
+          2: '#363636'
+        }
       },
       keyframes: {
         scale: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.1)' }
+        },
+        marquee: {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(-100%)' }
         }
       },
       animation: {
         scale: 'scale 1s ease-in-out infinite',
-        spin: 'spin 4s linear infinite'
+        spin: 'spin 4s linear infinite',
+        marquee: 'marquee 20s linear infinite'
       }
     }
   },

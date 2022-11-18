@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -425,7 +425,9 @@ body{
   font-family: Space Grotesk;
 }
 
-p{
+h1,
+  h2,
+  p{
   text-transform: capitalize;
 }
 
@@ -546,6 +548,16 @@ p{
   background-position: right top;
 }
 
+.text-stroke{
+  z-index: 0;
+  font-size: 330px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #363636;
+  -webkit-text-stroke-width: 1px;
+}
+
 .absolute{
   position: absolute;
 }
@@ -561,8 +573,44 @@ p{
   left: 0px;
 }
 
+.-right-\[360px\]{
+  right: -360px;
+}
+
+.-top-40{
+  top: -10rem;
+}
+
+.-left-\[100px\]{
+  left: -100px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.-left-\[185px\]{
+  left: -185px;
+}
+
+.-left-56{
+  left: -14rem;
+}
+
+.-bottom-24{
+  bottom: -6rem;
+}
+
 .z-50{
   z-index: 50;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .m-auto{
@@ -575,6 +623,26 @@ p{
 
 .mb-\[58px\]{
   margin-bottom: 58px;
+}
+
+.mb-36{
+  margin-bottom: 9rem;
+}
+
+.mb-\[141px\]{
+  margin-bottom: 141px;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.mb-\[33px\]{
+  margin-bottom: 33px;
 }
 
 .inline-block{
@@ -614,6 +682,11 @@ p{
   width: 148px;
 }
 
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .w-2\.5{
   width: 0.625rem;
 }
@@ -622,12 +695,46 @@ p{
   width: 0.5rem;
 }
 
+.w-\[573px\]{
+  width: 573px;
+}
+
+.w-\[710px\]{
+  width: 710px;
+}
+
+.w-\[506px\]{
+  width: 506px;
+}
+
+.w-\[545px\]{
+  width: 545px;
+}
+
+@keyframes marquee{
+  from{
+    transform: translateX(100%);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee{
+  animation: marquee 20s linear infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
 
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -646,8 +753,8 @@ p{
   gap: 1.5rem;
 }
 
-.gap-\[75px\]{
-  gap: 75px;
+.gap-\[65px\]{
+  gap: 65px;
 }
 
 .gap-14{
@@ -656,6 +763,14 @@ p{
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -676,7 +791,22 @@ p{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-dark{
+.border-gray-2{
+  --tw-border-opacity: 1;
+  border-color: rgb(54 54 54 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-dark-2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 5 5 / var(--tw-bg-opacity));
+}
+
+.bg-dark-1{
   --tw-bg-opacity: 1;
   background-color: rgb(16 16 16 / var(--tw-bg-opacity));
 }
@@ -686,9 +816,8 @@ p{
   background-color: rgb(0 255 163 / var(--tw-bg-opacity));
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+.bg-\[\#111111\]\/50{
+  background-color: rgb(17 17 17 / 0.5);
 }
 
 .bg-\[\#111111\]{
@@ -720,12 +849,34 @@ p{
   padding-bottom: 25px;
 }
 
+.px-\[33px\]{
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.py-\[33px\]{
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
 .pt-\[37px\]{
   padding-top: 37px;
 }
 
 .pt-60{
   padding-top: 15rem;
+}
+
+.pt-\[76px\]{
+  padding-top: 76px;
+}
+
+.pb-\[365px\]{
+  padding-bottom: 365px;
+}
+
+.pt-\[69px\]{
+  padding-top: 69px;
 }
 
 .text-center{
@@ -782,7 +933,7 @@ p{
   color: rgb(0 255 163 / var(--tw-text-opacity));
 }
 
-.text-gray{
+.text-gray-1{
   --tw-text-opacity: 1;
   color: rgb(130 130 130 / var(--tw-text-opacity));
 }
@@ -790,6 +941,12 @@ p{
 .text-\[\#1e1e1e\]{
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity));
+}
+
+.backdrop-blur-sm{
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-all{

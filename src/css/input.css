@@ -8,6 +8,8 @@
   body {
     @apply font-grotesk;
   }
+  h1,
+  h2,
   p {
     @apply capitalize;
   }
@@ -16,5 +18,11 @@
 @layer components {
   .hero-bg {
     @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top;
+  }
+  .text-stroke {
+    @apply z-0 text-[330px] font-bold uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #363636;
+    -webkit-text-stroke-width: 1px;
   }
 }
