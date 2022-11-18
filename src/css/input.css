@@ -10,6 +10,7 @@
   }
   h1,
   h2,
+  a,
   p {
     @apply capitalize;
   }
