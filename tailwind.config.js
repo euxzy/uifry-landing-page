@@ -2,7 +2,21 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
-    extend: {}
+    container: {
+      screens: {
+        xl: '1240px'
+      },
+      center: true
+    },
+    extend: {
+      fontFamily: {
+        grotesk: ['Space Grotesk']
+      },
+      colors: {
+        dark: '#101010',
+        gray: '#828282'
+      }
+    }
   },
   plugins: []
 }
