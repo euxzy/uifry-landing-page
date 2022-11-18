@@ -8,4 +8,13 @@
   body {
     @apply font-grotesk;
   }
+  p {
+    @apply capitalize;
+  }
+}
+
+@layer components {
+  .hero-bg {
+    @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top;
+  }
 }

@@ -13,8 +13,19 @@ module.exports = {
         grotesk: ['Space Grotesk']
       },
       colors: {
+        mint: '#00FFA3',
         dark: '#101010',
         gray: '#828282'
+      },
+      keyframes: {
+        scale: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' }
+        }
+      },
+      animation: {
+        scale: 'scale 1s ease-in-out infinite',
+        spin: 'spin 4s linear infinite'
       }
     }
   },
