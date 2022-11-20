@@ -8,8 +8,8 @@
     <title>UIFRY</title>
   </head>
   <body>
-    <header class="fixed z-50 w-full bg-dark-1 pt-[37px] md:bg-transparent">
-      <div class="container flex items-center justify-between px-6 pb-6 md:px-0 md:pb-0">
+    <header class="fixed z-50 w-full bg-dark-1 pt-[37px] transition-all duration-500 md:bg-transparent">
+      <div class="container flex items-center justify-between px-6 pb-6 md:px-0">
         <a href="/">
           <img src="./src/images/icon/logo.svg" alt="Uifry" />
         </a>
@@ -31,9 +31,9 @@
             <li><a href="#">Community</a></li>
           </ul>
 
-          <div class="flex gap-6 font-bold text-mint md:text-black">
+          <div id="btn-nav" class="flex gap-6 font-bold text-mint md:text-black">
             <a href="#" class="py-4 px-6">Sign Up</a>
-            <a href="#" class="border border-mint py-4 px-6 md:border-black">Login</a>
+            <a id="btn-login" href="#" class="border border-mint py-4 px-6 md:border-black">Login</a>
           </div>
         </nav>
       </div>
