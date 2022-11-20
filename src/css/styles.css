@@ -1387,6 +1387,18 @@ h1,
     width: 24rem;
   }
 
+  .md\:w-\[715px\]{
+    width: 715px;
+  }
+
+  .md\:w-\[650px\]{
+    width: 650px;
+  }
+
+  .md\:w-\[625px\]{
+    width: 625px;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1409,6 +1421,14 @@ h1,
 
   .md\:gap-14{
     gap: 3.5rem;
+  }
+
+  .md\:gap-11{
+    gap: 2.75rem;
+  }
+
+  .md\:gap-12{
+    gap: 3rem;
   }
 
   .md\:border-black{
