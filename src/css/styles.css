@@ -1082,6 +1082,10 @@ h1,
   line-height: 2.5rem;
 }
 
+.text-\[52px\]{
+  font-size: 52px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1403,6 +1407,10 @@ h1,
     flex-direction: row;
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:gap-\[455px\]{
     gap: 455px;
   }
@@ -1429,6 +1437,10 @@ h1,
 
   .md\:gap-12{
     gap: 3rem;
+  }
+
+  .md\:gap-0{
+    gap: 0px;
   }
 
   .md\:border-black{
@@ -1612,6 +1624,10 @@ h1,
 
   .lg\:w-\[685px\]{
     width: 685px;
+  }
+
+  .lg\:w-\[300px\]{
+    width: 300px;
   }
 
   .lg\:flex-row{
