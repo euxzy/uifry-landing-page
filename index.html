@@ -123,24 +123,31 @@
       </section>
 
       <section id="project" class="mb-[46px] overflow-hidden bg-dark-1 pt-[76px]">
-        <div class="container px-6 text-white xl:px-0">
+        <div class="container cursor-default px-6 text-white xl:px-0">
           <div class="mb-36 flex flex-col items-center gap-10 lg:flex-row lg:justify-between lg:gap-0">
             <div class="flex flex-col items-center gap-6 md:flex-row">
               <div class="flex gap-6">
-                <img src="./src/images/brands/google.svg" alt="Google" />
-                <img src="./src/images/brands/slack.svg" alt="Slack" />
+                <img src="./src/images/brands/google.svg" alt="Google" class="cursor-pointer" />
+                <img src="./src/images/brands/slack.svg" alt="Slack" class="cursor-pointer" />
               </div>
               <div class="flex gap-6">
-                <img src="./src/images/brands/rio-tinto.svg" alt="RioTinto" />
-                <img src="./src/images/brands/heroku.svg" alt="Heroku" />
+                <img src="./src/images/brands/rio-tinto.svg" alt="RioTinto" class="cursor-pointer" />
+                <img src="./src/images/brands/heroku.svg" alt="Heroku" class="cursor-pointer" />
               </div>
             </div>
-            <div class="flex flex-col items-center gap-7 border border-gray-2 p-[33px] md:flex-row lg:w-[573px]">
-              <p class="text-center text-gray-1 md:text-left">
+            <div
+              class="group flex flex-col items-center gap-7 border border-gray-2 p-[33px] transition-all duration-300 hover:border-mint md:flex-row lg:w-[573px]"
+            >
+              <p class="text-center text-gray-1 transition-all duration-300 group-hover:text-mint/90 md:text-left">
                 lacus, quis nunc urna. Feugiat neque, non, mi erat ultricies
               </p>
               <div class="flex gap-4 font-bold">
-                <button type="submit" class="border border-white py-4 px-6">Decline</button>
+                <button
+                  type="submit"
+                  class="border border-white py-4 px-6 transition-all duration-300 hover:border-mint hover:bg-mint hover:text-black"
+                >
+                  Decline
+                </button>
                 <button type="submit" class="bg-mint py-4 px-6 text-black">Allow</button>
               </div>
             </div>
