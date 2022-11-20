@@ -1355,6 +1355,38 @@ h1,
     width: 545px;
   }
 
+  .md\:w-\[610px\]{
+    width: 610px;
+  }
+
+  .md\:w-\[505px\]{
+    width: 505px;
+  }
+
+  .md\:w-\[400px\]{
+    width: 400px;
+  }
+
+  .md\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .md\:w-\[200px\]{
+    width: 200px;
+  }
+
+  .md\:w-\[100px\]{
+    width: 100px;
+  }
+
+  .md\:w-\[60px\]{
+    width: 60px;
+  }
+
+  .md\:w-96{
+    width: 24rem;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1529,6 +1561,10 @@ h1,
     width: auto;
   }
 
+  .lg\:w-96{
+    width: 24rem;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1655,6 +1691,14 @@ h1,
 
   .xl\:w-\[227px\]{
     width: 227px;
+  }
+
+  .xl\:w-\[505px\]{
+    width: 505px;
+  }
+
+  .xl\:w-\[610px\]{
+    width: 610px;
   }
 
   .xl\:gap-\[455px\]{
