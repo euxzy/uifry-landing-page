@@ -46,12 +46,18 @@
     </header>
 
     <main class="bg-dark-2 pb-12">
-      <section id="hero" class="relative bg-dark-1 pt-60">
+      <section id="hero" class="relative cursor-default bg-dark-1 pt-60">
         <div class="hero-bg"></div>
 
         <div class="container relative px-6 xl:px-0">
           <div class="relative mb-20 flex items-center justify-between lg:mb-10 xl:w-[1030px]">
-            <div><img class="rounded-full" src="./src/images/hero-img.png" alt="Home" /></div>
+            <div class="cursor-pointer overflow-hidden rounded-full">
+              <img
+                src="./src/images/hero-img.png"
+                alt="Home"
+                class="inline-block scale-100 transition-all duration-300 hover:scale-110"
+              />
+            </div>
 
             <div class="group absolute -bottom-32 right-2 h-max w-28 cursor-pointer md:bottom-0 md:right-0 md:w-max">
               <img
@@ -78,8 +84,14 @@
 
           <div class="mb-[58px] flex flex-col-reverse items-center gap-[65px] text-gray-1 lg:flex-row">
             <div class="flex gap-5 md:gap-14">
-              <div class="flex w-28 items-center justify-center bg-mint md:w-[148px]">
-                <p class="px-[29px] text-center text-xl font-bold text-black md:text-2xl">get started</p>
+              <div
+                class="group flex w-28 cursor-pointer items-center justify-center border border-transparent bg-mint transition-all duration-300 hover:border-mint hover:bg-transparent md:w-[148px]"
+              >
+                <p
+                  class="px-[29px] text-center text-xl font-bold text-black transition-all duration-300 group-hover:text-mint md:text-2xl"
+                >
+                  get started
+                </p>
               </div>
               <div class="w-28 md:w-[148px]">
                 <p class="text-5xl font-bold text-white md:text-6xl">20%</p>
