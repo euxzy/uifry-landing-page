@@ -1287,6 +1287,18 @@ h1,
     gap: 455px;
   }
 
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
+  }
+
   .md\:border-black{
     --tw-border-opacity: 1;
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1425,6 +1437,30 @@ h1,
     gap: 121px;
   }
 
+  .lg\:gap-\[455px\]{
+    gap: 455px;
+  }
+
+  .lg\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .lg\:gap-96{
+    gap: 24rem;
+  }
+
+  .lg\:gap-80{
+    gap: 20rem;
+  }
+
+  .lg\:gap-60{
+    gap: 15rem;
+  }
+
+  .lg\:gap-64{
+    gap: 16rem;
+  }
+
   .lg\:bg-transparent{
     background-color: transparent;
   }
@@ -1489,5 +1525,22 @@ h1,
   .lg\:text-gray-1{
     --tw-text-opacity: 1;
     color: rgb(130 130 130 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:gap-\[455px\]{
+    gap: 455px;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:gap-\[455px\]{
+    gap: 455px;
   }
 }
