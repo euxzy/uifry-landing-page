@@ -105,16 +105,22 @@
       </section>
 
       <section id="project" class="mb-[46px] overflow-hidden bg-dark-1 pt-[76px]">
-        <div class="container text-white">
-          <div class="mb-36 flex items-center justify-between">
-            <div class="flex gap-6">
-              <img src="./src/images/brands/google.svg" alt="Google" />
-              <img src="./src/images/brands/slack.svg" alt="Slack" />
-              <img src="./src/images/brands/rio-tinto.svg" alt="RioTinto" />
-              <img src="./src/images/brands/heroku.svg" alt="Heroku" />
+        <div class="container px-6 text-white md:px-0">
+          <div class="mb-36 flex flex-col items-center gap-10 lg:flex-row lg:justify-between lg:gap-0">
+            <div class="flex flex-col items-center gap-6 lg:flex-row">
+              <div class="flex gap-6">
+                <img src="./src/images/brands/google.svg" alt="Google" />
+                <img src="./src/images/brands/slack.svg" alt="Slack" />
+              </div>
+              <div class="flex gap-6">
+                <img src="./src/images/brands/rio-tinto.svg" alt="RioTinto" />
+                <img src="./src/images/brands/heroku.svg" alt="Heroku" />
+              </div>
             </div>
-            <div class="flex w-[573px] items-center gap-7 border border-gray-2 px-[33px] py-[33px]">
-              <p class="text-gray-1">lacus, quis nunc urna. Feugiat neque, non, mi erat ultricies</p>
+            <div class="flex flex-col items-center gap-7 border border-gray-2 p-[33px] lg:w-[573px] lg:flex-row">
+              <p class="text-center text-gray-1 lg:text-left">
+                lacus, quis nunc urna. Feugiat neque, non, mi erat ultricies
+              </p>
               <div class="flex gap-4 font-bold">
                 <button type="submit" class="border border-white py-4 px-6">Decline</button>
                 <button type="submit" class="bg-mint py-4 px-6 text-black">Allow</button>
@@ -124,23 +130,29 @@
 
           <div class="relative mb-[141px]">
             <p class="text-stroke absolute -right-[360px] -top-40">select</p>
+
             <div class="relative">
               <p class="mb-4 text-2xl font-bold text-mint">select project</p>
-              <h1 class="text-6xl">browse popular houses based on their features.</h1>
+              <h1 class="text-[56px] leading-none lg:text-6xl">browse popular houses based on their features.</h1>
             </div>
           </div>
 
           <div class="relative flex w-full justify-end pb-[365px]">
-            <div class="absolute -left-[100px] top-0 z-10 w-[710px]">
+            <div class="absolute -left-[550px] top-0 z-10 w-[710px] lg:-left-[100px]">
               <img src="./src/images/home.png" alt="Home" class="w-full" />
             </div>
             <div class="relative z-20 mr-10 pt-[69px]">
-              <h2 class="relative -left-[185px] mb-[33px] w-[506px] text-6xl">compact classic summer house.</h2>
-              <p class="w-[545px] text-lg text-gray-1">
+              <h2 class="relative mb-[33px] text-4xl lg:-left-[185px] lg:w-[506px] lg:text-6xl">
+                compact classic summer house.
+              </h2>
+              <p
+                class="relative left-10 bg-dark-2/20 p-6 text-white backdrop-blur-sm lg:left-0 lg:w-[545px] lg:bg-transparent lg:p-0 lg:text-lg lg:text-gray-1"
+              >
                 Donec cras lacus, quis nunc urna. Feugiat neque, non, mi erat ultricies morbi. Habitasse iaculis sed
                 morbi natoque. acus, quis nunc urna. Feugiat neque, non, mi erat
               </p>
             </div>
+
             <p class="text-stroke absolute -left-56 -bottom-24">poject</p>
           </div>
         </div>
