@@ -871,6 +871,14 @@ h1,
   width: 925px;
 }
 
+.w-96{
+  width: 24rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1425,6 +1433,10 @@ h1,
     width: 505px;
   }
 
+  .lg\:w-\[715px\]{
+    width: 715px;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1439,6 +1451,10 @@ h1,
 
   .lg\:gap-0{
     gap: 0px;
+  }
+
+  .lg\:gap-\[70px\]{
+    gap: 70px;
   }
 
   .lg\:bg-transparent{
