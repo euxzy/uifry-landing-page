@@ -985,6 +985,14 @@ h1,
   gap: 4rem;
 }
 
+.gap-40{
+  gap: 10rem;
+}
+
+.gap-32{
+  gap: 8rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1100,6 +1108,11 @@ h1,
 .py-\[25px\]{
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pt-\[37px\]{

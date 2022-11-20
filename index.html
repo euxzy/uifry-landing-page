@@ -293,16 +293,19 @@
     </main>
 
     <footer id="footer" class="bg-dark-1">
-      <div class="container pt-[92px] text-white">
-        <div class="flex items-end justify-between border-b border-gray-1 pb-[105px]">
+      <div class="container px-6 pt-[92px] text-white lg:px-0">
+        <div
+          class="flex flex-col items-end justify-between gap-32 border-b border-gray-1 pb-[105px] lg:flex-row lg:gap-0"
+        >
           <div class="text-6xl">
             <h1 class="mb-2">it's your life.</h1>
             <h1 class="flex items-center gap-6">
               <span class="text-2xl font-bold text-mint">2020 lobro </span><span>take the keys.</span>
             </h1>
           </div>
+
           <form action="">
-            <div class="flex w-[505px] border-b-2 border-mint pb-6">
+            <div class="flex border-b-2 border-mint pb-6 lg:w-[505px]">
               <input
                 type="email"
                 name="email"
@@ -315,14 +318,16 @@
           </form>
         </div>
 
-        <div class="mt-14 flex justify-center pb-[72px]">
-          <ul class="flex gap-14">
+        <ul class="mt-14 flex w-full flex-col justify-center gap-4 px-10 pb-[72px] lg:flex-row lg:gap-14 lg:px-0">
+          <div class="flex justify-between lg:gap-14">
             <li><a href="">explore</a></li>
             <li><a href="">about us</a></li>
+          </div>
+          <div class="flex justify-between lg:gap-14">
             <li><a href="">how it works</a></li>
             <li><a href="">community</a></li>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </div>
     </footer>
 
