@@ -1278,6 +1278,50 @@ h1,
     right: 0px;
   }
 
+  .md\:-left-\[100px\]{
+    left: -100px;
+  }
+
+  .md\:-left-32{
+    left: -8rem;
+  }
+
+  .md\:-left-48{
+    left: -12rem;
+  }
+
+  .md\:-left-56{
+    left: -14rem;
+  }
+
+  .md\:-left-72{
+    left: -18rem;
+  }
+
+  .md\:-left-60{
+    left: -15rem;
+  }
+
+  .md\:-left-64{
+    left: -16rem;
+  }
+
+  .md\:-left-\[185px\]{
+    left: -185px;
+  }
+
+  .md\:left-40{
+    left: 10rem;
+  }
+
+  .md\:left-32{
+    left: 8rem;
+  }
+
+  .md\:left-28{
+    left: 7rem;
+  }
+
   .md\:hidden{
     display: none;
   }
@@ -1301,6 +1345,14 @@ h1,
 
   .md\:w-\[148px\]{
     width: 148px;
+  }
+
+  .md\:w-\[506px\]{
+    width: 506px;
+  }
+
+  .md\:w-\[545px\]{
+    width: 545px;
   }
 
   .md\:flex-row{
@@ -1336,6 +1388,11 @@ h1,
     background-color: transparent;
   }
 
+  .md\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .md\:p-0{
     padding: 0px;
   }
@@ -1347,6 +1404,10 @@ h1,
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-\[32px\]{
