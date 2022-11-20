@@ -17,6 +17,19 @@
   }
 }
 
+::-webkit-scrollbar {
+  @apply w-[0.4vw];
+}
+::-webkit-scrollbar-track {
+  @apply bg-dark-1/90;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-white shadow-[inset_0_0_0.7rem] shadow-dark-2;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply rounded-md bg-white shadow-[inset_0_0_0.4rem] shadow-gray-1;
+}
+
 .hero-bg {
   @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top bg-no-repeat;
 }
