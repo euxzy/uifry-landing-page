@@ -17,7 +17,7 @@ const btnNav = getEl('#btn-nav')
 const btnLogin = getEl('#btn-login')
 
 window.onscroll = () => {
-  if (window.pageYOffset > hero.offsetTop + 250) {
+  if (window.pageYOffset > hero.offsetTop + 150) {
     header.classList.remove('md:bg-transparent')
     btnNav.classList.remove('md:text-black')
     btnLogin.classList.remove('md:border-black')
