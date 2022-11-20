@@ -981,6 +981,10 @@ h1,
   gap: 2rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1437,6 +1441,10 @@ h1,
     width: 715px;
   }
 
+  .lg\:w-\[925px\]{
+    width: 925px;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1455,6 +1463,10 @@ h1,
 
   .lg\:gap-\[70px\]{
     gap: 70px;
+  }
+
+  .lg\:gap-\[121px\]{
+    gap: 121px;
   }
 
   .lg\:bg-transparent{
@@ -1510,12 +1522,21 @@ h1,
     line-height: 1.5rem;
   }
 
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:leading-\[102px\]{
     line-height: 102px;
   }
 
   .lg\:leading-\[41px\]{
     line-height: 41px;
+  }
+
+  .lg\:leading-\[61px\]{
+    line-height: 61px;
   }
 
   .lg\:text-gray-1{
