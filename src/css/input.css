@@ -19,7 +19,7 @@
 
 @layer components {
   .hero-bg {
-    @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top;
+    @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top bg-no-repeat;
   }
   .text-stroke {
     @apply z-0 text-[330px] font-bold uppercase;

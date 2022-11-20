@@ -548,6 +548,7 @@ h1,
   width: 50%;
   background-image: url(../images/hero-bg.png);
   background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .text-stroke{
@@ -572,11 +573,6 @@ h1,
   opacity: 0;
 }
 
-.show-nav{
-  right: 0px;
-  opacity: 1;
-}
-
 .fixed{
   position: fixed;
 }
@@ -596,8 +592,16 @@ h1,
   left: 0px;
 }
 
-.top-28{
-  top: 7rem;
+.top-24{
+  top: 6rem;
+}
+
+.top-32{
+  top: 8rem;
+}
+
+.right-2{
+  right: 0.5rem;
 }
 
 .-right-\[360px\]{
@@ -648,12 +652,16 @@ h1,
   bottom: -2rem;
 }
 
-.top-20{
-  top: 5rem;
+.top-36{
+  top: 9rem;
 }
 
-.top-24{
-  top: 6rem;
+.-bottom-36{
+  bottom: -9rem;
+}
+
+.-bottom-32{
+  bottom: -8rem;
 }
 
 .z-50{
@@ -672,8 +680,16 @@ h1,
   margin: auto;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-\[58px\]{
@@ -736,8 +752,8 @@ h1,
   margin-top: 3.5rem;
 }
 
-.inline-block{
-  display: inline-block;
+.block{
+  display: block;
 }
 
 .flex{
@@ -765,12 +781,16 @@ h1,
   width: 100%;
 }
 
-.w-\[1030px\]{
-  width: 1030px;
+.w-28{
+  width: 7rem;
 }
 
-.w-\[227px\]{
-  width: 227px;
+.w-14{
+  width: 3.5rem;
+}
+
+.w-36{
+  width: 9rem;
 }
 
 .w-\[148px\]{
@@ -826,6 +846,10 @@ h1,
   width: 925px;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -850,6 +874,10 @@ h1,
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-col-reverse{
+  flex-direction: column-reverse;
 }
 
 .flex-nowrap{
@@ -914,6 +942,14 @@ h1,
 
 .gap-\[121px\]{
   gap: 121px;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .overflow-hidden{
@@ -989,22 +1025,34 @@ h1,
   background-color: transparent;
 }
 
-.p-\[37px\]{
-  padding: 37px;
+.bg-slate-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .p-6{
   padding: 1.5rem;
 }
 
+.p-\[37px\]{
+  padding: 37px;
+}
+
+.p-7{
+  padding: 1.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-4{
@@ -1096,12 +1144,13 @@ h1,
   text-align: center;
 }
 
-.text-\[80px\]{
-  font-size: 80px;
+.text-\[56px\]{
+  font-size: 56px;
 }
 
-.text-\[32px\]{
-  font-size: 32px;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl{
@@ -1112,6 +1161,11 @@ h1,
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-lg{
@@ -1128,12 +1182,8 @@ h1,
   font-weight: 700;
 }
 
-.leading-\[102px\]{
-  line-height: 102px;
-}
-
-.leading-\[41px\]{
-  line-height: 41px;
+.leading-tight{
+  line-height: 1.25;
 }
 
 .leading-\[61px\]{
@@ -1233,17 +1283,6 @@ h1,
     position: static;
   }
 
-  .md\:relative{
-    position: relative;
-  }
-
-  .md\:inset-0{
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-
   .md\:hidden{
     display: none;
   }
@@ -1290,5 +1329,99 @@ h1,
 
   .md\:opacity-100{
     opacity: 1;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:right-0{
+    right: 0px;
+  }
+
+  .lg\:top-0{
+    top: 0px;
+  }
+
+  .lg\:bottom-0{
+    bottom: 0px;
+  }
+
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .lg\:inline-block{
+    display: inline-block;
+  }
+
+  .lg\:w-\[1030px\]{
+    width: 1030px;
+  }
+
+  .lg\:w-max{
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .lg\:w-\[227px\]{
+    width: 227px;
+  }
+
+  .lg\:w-\[148px\]{
+    width: 148px;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:gap-\[65px\]{
+    gap: 65px;
+  }
+
+  .lg\:gap-14{
+    gap: 3.5rem;
+  }
+
+  .lg\:bg-\[\#111111\]\/50{
+    background-color: rgb(17 17 17 / 0.5);
+  }
+
+  .lg\:p-\[37px\]{
+    padding: 37px;
+  }
+
+  .lg\:text-\[80px\]{
+    font-size: 80px;
+  }
+
+  .lg\:text-\[32px\]{
+    font-size: 32px;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:leading-\[102px\]{
+    line-height: 102px;
+  }
+
+  .lg\:leading-\[41px\]{
+    line-height: 41px;
   }
 }
