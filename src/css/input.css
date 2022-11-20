@@ -17,23 +17,28 @@
   }
 }
 
-@layer components {
-  .hero-bg {
-    @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top bg-no-repeat;
-  }
-  .text-stroke {
-    @apply z-0 text-[330px] font-bold uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #363636;
-    -webkit-text-stroke-width: 1px;
-  }
-  #hamburger-menu > span {
-    @apply h-0.5 w-5 bg-gray-1;
-  }
-  .hide-nav {
-    @apply -right-full opacity-0;
-  }
-  .show-nav {
-    @apply right-0 opacity-100;
-  }
+.hero-bg {
+  @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top bg-no-repeat;
+}
+.text-stroke {
+  @apply z-0 text-[330px] font-bold uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #363636;
+  -webkit-text-stroke-width: 1px;
+}
+#hamburger-menu > span {
+  @apply h-0.5 w-5 bg-gray-1 transition-all duration-300;
+}
+.hide-nav {
+  @apply -right-full opacity-0;
+}
+.show-nav {
+  @apply right-0 opacity-100;
+}
+.close > span:first-child,
+.close > span:last-child {
+  @apply -rotate-45;
+}
+.close > span:nth-child(2) {
+  @apply rotate-45;
 }
