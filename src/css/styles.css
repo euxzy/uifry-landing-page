@@ -969,6 +969,10 @@ h1,
   gap: 3.5rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1413,6 +1417,14 @@ h1,
     width: 545px;
   }
 
+  .lg\:w-\[610px\]{
+    width: 610px;
+  }
+
+  .lg\:w-\[505px\]{
+    width: 505px;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1443,6 +1455,11 @@ h1,
 
   .lg\:p-0{
     padding: 0px;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:text-left{
