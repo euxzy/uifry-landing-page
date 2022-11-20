@@ -27,4 +27,13 @@
     -webkit-text-stroke-color: #363636;
     -webkit-text-stroke-width: 1px;
   }
+  #hamburger-menu > span {
+    @apply h-0.5 w-5 bg-gray-1;
+  }
+  .hide-nav {
+    @apply -right-full opacity-0;
+  }
+  .show-nav {
+    @apply right-0 opacity-100;
+  }
 }

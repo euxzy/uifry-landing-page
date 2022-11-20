@@ -8,23 +8,32 @@
     <title>UIFRY</title>
   </head>
   <body>
-    <header class="absolute z-50 w-full pt-[37px]">
-      <div class="container flex items-center justify-between">
+    <header class="fixed z-50 w-full bg-dark-1 pt-[37px] md:bg-transparent">
+      <div class="container flex items-center justify-between px-6 pb-6 md:px-0 md:pb-0">
         <a href="/">
           <img src="./src/images/icon/logo.svg" alt="Uifry" />
         </a>
 
-        <nav class="flex items-center gap-[455px]">
-          <ul class="flex gap-6 text-white">
+        <div id="hamburger-menu" class="relative flex h-5 flex-col justify-between md:hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav
+          id="nav-menu"
+          class="hide-nav absolute top-24 flex flex-col items-center gap-6 bg-dark-1 p-6 transition-all duration-500 md:static md:flex-row md:gap-[455px] md:bg-transparent md:p-0 md:opacity-100"
+        >
+          <ul class="flex flex-col items-center gap-6 text-white md:flex-row">
             <li><a href="#" class="font-bold">Explore</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Community</a></li>
           </ul>
 
-          <div class="flex gap-6 font-bold text-black">
+          <div class="flex gap-6 font-bold text-mint md:text-black">
             <a href="#" class="py-4 px-6">Sign Up</a>
-            <a href="#" class="border border-black py-4 px-6">Login</a>
+            <a href="#" class="border border-mint py-4 px-6 md:border-black">Login</a>
           </div>
         </nav>
       </div>
@@ -290,5 +299,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
