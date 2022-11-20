@@ -344,7 +344,7 @@
     </main>
 
     <footer id="footer" class="bg-dark-1">
-      <div class="container px-6 pt-[92px] text-white xl:px-0">
+      <div class="container cursor-default px-6 pt-[92px] text-white xl:px-0">
         <div
           class="flex flex-col items-end justify-between gap-32 border-b border-gray-1 pb-[105px] lg:flex-row lg:gap-0"
         >
@@ -356,15 +356,19 @@
           </div>
 
           <form action="" class="w-full lg:w-auto">
-            <div class="flex w-full border-b-2 border-mint pb-6 lg:w-auto xl:w-[505px]">
+            <div class="relative flex w-full pb-6 lg:w-auto xl:w-[505px]">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="lobro@gmail.com"
-                class="flex-1 bg-transparent text-lg placeholder:text-white"
+                class="peer flex-1 bg-transparent text-lg outline-none placeholder:text-white"
               />
               <button type="submit" class="bg-mint py-4 px-6 font-bold text-dark-2">get started</button>
+
+              <div
+                class="absolute inset-x-0 bottom-0 mx-auto block h-0.5 w-0 bg-mint transition-all duration-300 peer-hover:w-full peer-focus:w-full peer-active:w-full"
+              ></div>
             </div>
           </form>
         </div>

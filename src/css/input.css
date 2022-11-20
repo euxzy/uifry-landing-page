@@ -53,13 +53,18 @@
 .close > span:nth-child(2) {
   @apply rotate-45;
 }
-nav ul li {
+
+/* navbar and footer */
+nav ul li,
+footer ul li {
   @apply relative;
 }
-nav ul li::after {
+nav ul li::after,
+footer ul li::after {
   @apply absolute inset-x-0 -bottom-3 mx-auto block h-1 w-0 bg-mint transition-all duration-300 content-[''];
 }
-nav ul li:hover::after {
+nav ul li:hover::after,
+footer ul li:hover::after {
   @apply w-4/5;
 }
 
