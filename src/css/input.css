@@ -29,16 +29,14 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply rounded-md bg-white shadow-[inset_0_0_0.4rem] shadow-gray-1;
 }
-
-.hero-bg {
-  @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top bg-no-repeat;
-}
 .text-stroke {
   @apply z-0 text-[330px] font-bold uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #363636;
   -webkit-text-stroke-width: 1px;
 }
+
+/* navbar */
 #hamburger-menu > span {
   @apply h-0.5 w-5 bg-gray-1 transition-all duration-300;
 }
@@ -54,4 +52,18 @@
 }
 .close > span:nth-child(2) {
   @apply rotate-45;
+}
+nav ul li {
+  @apply relative;
+}
+nav ul li::after {
+  @apply absolute inset-x-0 -bottom-3 mx-auto block h-1 w-0 bg-mint transition-all duration-300 content-[''];
+}
+nav ul li:hover::after {
+  @apply w-4/5;
+}
+
+/* hero */
+.hero-bg {
+  @apply absolute top-0 right-0 z-0 h-full w-1/2 bg-[url(../images/hero-bg.png)] bg-right-top bg-no-repeat;
 }
